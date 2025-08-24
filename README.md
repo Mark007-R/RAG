@@ -21,11 +21,12 @@ Implementation of **RAG with Cosine Similarity**.
 
 ---
 
-### 3. `RAG_with_Ollama_FAISS.ipynb`
-Implementation of **RAG with Ollama + FAISS**.  
-- Uses **Ollama** for embeddings and language generation.  
-- Employs **FAISS** (Facebook AI Similarity Search) for efficient vector similarity search.  
-- Optimized for larger datasets with fast nearest-neighbor retrieval.  
+### 3. `RAG_with_HuggingFace_Ollama_WeaviateDB.ipynb`
+Implementation of **RAG with HuggingFace + Ollama + WeaviateDB**.  
+- Uses **HuggingFace** models for embeddings.  
+- Stores and retrieves vectors with **WeaviateDB** for scalable similarity search.  
+- Generates responses using **Ollama** with context from Weaviate.  
+- Suitable for large datasets with metadata filtering and hybrid search.
 
 ---
 
