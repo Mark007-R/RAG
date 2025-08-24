@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask RAG App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        form { margin-bottom: 20px; }
+        input[type="text"] {
+            width: 400px; padding: 10px; margin-right: 10px;
+            border: 1px solid #ccc; border-radius: 6px;
+        }
+        button {
+            padding: 10px 20px; border: none; background: #4CAF50;
+            color: white; border-radius: 6px; cursor: pointer;
+        }
+        button:hover { background: #45a049; }
+        .answer {
+            margin-top: 20px; padding: 15px; border: 1px solid #ddd;
+            background: #f9f9f9; border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ask a Question (Machine Learning RAG)</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="Enter your question..." required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+    <div class="answer">
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
