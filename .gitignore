@@ -1,0 +1,29 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Text files
+*.txt
+*.txt.local
+*.txt.*.local
+
+# PDF files
+*.pdf
+*.pdf.local
+*.pdf.*.local
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.python-version
+
+# VSCode / IDE settings
+.vscode/
+.idea/
